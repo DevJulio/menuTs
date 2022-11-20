@@ -1,0 +1,50 @@
+import { TCardProps } from "../../../components/homeCard/card";
+import { theme } from "../../../theme/theme";
+import shine from "../../../assets/icons/cardsIcons/shine.png"
+import atualizacao from "../../../assets/icons/cardsIcons/atualizacao.png"
+import promo from "../../../assets/icons/cardsIcons/promo.png"
+import reserva from "../../../assets/icons/cardsIcons/reserva.png"
+import bot from "../../../assets/icons/cardsIcons/bot.png"
+
+const cardProps: TCardProps[] = [
+    {
+        icon: atualizacao,
+        title: "Atualização",
+        text: "Altere o valor dos produtos, desaabilite o produto do cardápio caso já tenha esgotado, tudo isso de maneira fácil.",
+        mainColor: theme.colors.white.normal,
+        auxColor: theme.colors.blue.palete,
+        textColor: theme.colors.black.normal,
+    },
+    {
+        icon: promo,
+        title: "Promoções",
+        text: "Crie promoções de maneira dinâmica, elas terão destaque no cardápio! Adicione produtos a preços especiais!",
+        mainColor: theme.colors.blue.palete,
+        auxColor: theme.colors.white.normal
+    },
+    {
+        icon: reserva,
+        title: "Reservas",
+        text: "Um espaço dedicado aos seus clientes. Uma facilidade e praticidade a mais na hora de fazer reservas de mesa.",
+        mainColor: theme.colors.yellow.palete,
+        auxColor: "",
+        textColor: theme.colors.black.normal,
+
+    },
+    {
+        icon: shine,
+        title: "Identidade visual",
+        text: "Reforce ainda mais a sua Identidade visual! Torne clara a extensão do estabelecimento no cardápio!",
+        mainColor: theme.colors.blue.palete,
+        auxColor: theme.colors.red.normal
+    }, {
+        icon: bot,
+        title: "Automatização",
+        text: "Programe rotinas de promoções em dias especificos, envie notificações para seus clientes!",
+        mainColor: theme.colors.white.normal,
+        auxColor: theme.colors.red.normal,
+        textColor: theme.colors.black.normal,
+    },
+]
+
+export default cardProps
