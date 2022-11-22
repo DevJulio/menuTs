@@ -26,6 +26,11 @@ https://dribbble.com/shots/19035989-Tacoda-Mobile-app-design
 
 
 
+
+//Header com animação
+https://www.storyblocks.com/video/stock/animation---modern-motion-rotation-cheese-background-s5kfwtsvzj4lqyfin
+
+
 1ª parte:
 
 texto na esquerda fundo azul, quadro na direita
@@ -55,6 +60,9 @@ https://dribbble.com/shots/18790018-Food-Ordering-Bill-Splitting-Restaurant-App-
 
 
 criar banner principal para cara cliente, onde posso definir quual é o destaque ao entrar no cardápio
+
+
+!!!!!!!!!!!!ACIONAR ENTREGAADOR!!!!!!!!
 
 /////////////////////////////////////////FUTURO/////FUTURO/////FUTURO/////////////////////////////////////////////////////////////
 // Criar fidelidade  

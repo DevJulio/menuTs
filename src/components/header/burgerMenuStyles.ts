@@ -1,9 +1,12 @@
 import { theme } from "../../theme/theme";
+const width = window.screen.width;
+const diference = (((width / 10) * 6.5) * - 1)
+const formatDiference = diference.toString() + "px"
 
 const styles = {
     bmBurgerButton: {
         marginTop: "2.9vh",
-        position: "fixed",
+        position: "relative",
         width: "36px",
         height: "30px",
         right: "6vw",
@@ -24,6 +27,7 @@ const styles = {
     bmMenuWrap: {
         position: "fixed",
         height: "100%",
+        marginLeft: formatDiference,
     },
     bmMenu: {
         backgroundColor: "#fff",

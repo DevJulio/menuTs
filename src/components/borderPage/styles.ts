@@ -1,22 +1,25 @@
 import styled from "styled-components";
 
 
-export const MainVantageContainer = styled.div`
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.blue.palete};
+  padding-top: 5vh;
+
+`;
+
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.yellow.palete};
-`;
-
-export const VantageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: ${({ theme }) => theme.colors.white.normal};
   width: 100%;
   border-top-left-radius: 15vw;
   border-top-right-radius: 15vw;
- 
+  padding-top: 5vh;
+  cursor: default;
   {
     position:relative;
  
@@ -48,7 +51,7 @@ export const VantageContainer = styled.div`
 display:none;
 }
 `;
-export const VantageSpan = styled.span`
+export const Span = styled.span`
   color: ${({ theme }) => theme.colors.black.normal};
   display: flex;
   margin-right: 12px;
@@ -64,29 +67,10 @@ export const MainSpanContainer = styled.div`
   cursor: pointer;
   flex-direction: row;
   @media ${({ theme }) => theme.devices.tablet} {
-    text-align: -webkit-center;
-    width: 95%;
-    padding-bottom: 5vh;
   }
 `;
 
-
-
-export const CardsContainer = styled.div`
-  justify-content: center;
-  display: flex;
-  flex: 3;
-  flex-direction: row;
-  overflow-x: auto;
-  width: 50%;
-  align-self: center;
-  padding-bottom: 5vh;
-  padding-top: 5vh;
-  @media ${({ theme }) => theme.devices.tablet} {
-    width: 100%;
-  }
-`;
-export const VantageContainerMobile = styled.div`
+export const ContainerMobile = styled.div`
 display:none;
 @media ${({ theme }) => theme.devices.tablet} {
   display: flex;
@@ -101,24 +85,3 @@ display:none;
 }
 `;
 
-export const CarouselContainerMobile = styled.div`
-display:none;
-@media ${({ theme }) => theme.devices.tablet} {
-  width: 85%;
-  display: flex;
-}
-`;
-
-
-export const CardsContainerMobile = styled.div`
-display:none;
-
-  @media ${({ theme }) => theme.devices.tablet} {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    width: 100%;
-    align-self: center;
-  }
-`;

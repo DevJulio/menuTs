@@ -6,6 +6,17 @@ import logo from "../../assets/logo/logo.png";
 import { theme } from "../../theme/theme";
 
 const Header: React.FC = () => {
+  setTimeout(() => {
+    const element = document.querySelector(
+      "#root > div.sc-bcXHqe.kmAiWi > div > div.sc-iBYQkv.kzEVHx > div"
+    );
+    const teste = element as any;
+    if (teste) {
+      teste["style"].display = "flex";
+      teste["style"].marginLeft = "auto";
+    }
+  }, 150);
+
   return (
     <>
       <Styled.Container>

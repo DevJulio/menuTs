@@ -2,7 +2,7 @@ import React from "react";
 import * as Styled from "./styles";
 import { TCardProps } from "./card";
 
-const Homecard: React.FC<TCardProps> = ({
+const PlansCard: React.FC<TCardProps> = ({
   icon,
   title,
   text,
@@ -31,4 +31,4 @@ const Homecard: React.FC<TCardProps> = ({
   );
 };
 
-export default Homecard;
+export default PlansCard;
