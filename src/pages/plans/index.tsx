@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as Styled from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import BorderPage from "../../components/borderPage";
@@ -11,6 +11,11 @@ import anual from "../../assets/icons/anual.png";
 const Plans: React.FC = () => {
   const [checked, setCheked] = useState(false);
 
+  useEffect(() => {
+    setCheked(true)
+    setCheked(false)
+  }, []);
+
   return (
     <>
       <BorderPage
@@ -21,7 +26,7 @@ const Plans: React.FC = () => {
             <Styled.MainSpanContainer>
               <Styled.Span>E ai? pronto para começar?</Styled.Span>
               <Styled.SpacerContainer>
-                <Spacer customWidth="9.5vw" color={theme.colors.red.normal} />
+                {/* <Spacer customWidth="9.5vw" color={theme.colors.red.normal} /> */}
               </Styled.SpacerContainer>
               <Styled.SpanAux>
                 Escolha o plano que mais se encaixe para seu estabelecimento e
@@ -60,6 +65,28 @@ const Plans: React.FC = () => {
                   Anual
                 </Styled.SpanAux>
               </Styled.SwitchContainer>
+              <Styled.SwitchUnder>
+                
+                {!checked && (
+                  <Styled.SwitchUnderLeft>
+                    <Spacer
+                      customHeight="5px"
+                      customWidth="3.8vw"
+                      color={theme.colors.blue.palete}
+                    />
+                  </Styled.SwitchUnderLeft>
+                )}
+
+                {checked && (
+                  <Styled.SwitchUnderRight>
+                    <Spacer
+                      customHeight="5px"
+                      customWidth="3.8vw"
+                      color={theme.colors.blue.palete}
+                    />
+                  </Styled.SwitchUnderRight>
+                )}
+              </Styled.SwitchUnder>
             </Styled.OffCointainer>
 
             <Styled.PlansContainer></Styled.PlansContainer>

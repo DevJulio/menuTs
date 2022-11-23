@@ -4,14 +4,16 @@ import * as Styled from "./styles";
 interface Props {
   color: string;
   customWidth?: string;
+  customHeight?: string;
 }
-const Spacer: React.FC<Props> = ({ color, customWidth }) => {
+const Spacer: React.FC<Props> = ({ color, customWidth, customHeight }) => {
   return (
     <>
       <Styled.Spacer
         style={{
           backgroundColor: color,
           width: customWidth ? customWidth : "3vw",
+          height: customHeight ? customHeight : "16px",
         }}
       />
     </>

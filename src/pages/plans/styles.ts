@@ -95,3 +95,26 @@ export const SwitchIconCointainer = styled.div`
   @media ${({ theme }) => theme.devices.tablet} {
   }
 `;
+export const SwitchUnder = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 5px;
+  @media ${({ theme }) => theme.devices.tablet} {
+  }
+`;
+export const SwitchUnderLeft = styled.div`
+  display: flex;
+    padding-bottom: 2vh;
+     padding-right: 5vw;
+    @media ${({ theme }) => theme.devices.laptopL} {
+      padding-right: 10vw;
+    }
+`;
+export const SwitchUnderRight = styled.div`
+  display: flex;
+    padding-bottom: 2vh;
+    padding-left: 9.3vw;
+     @media ${({ theme }) => theme.devices.laptopL} {
+      padding-right: 10vw;
+    }
+`;
