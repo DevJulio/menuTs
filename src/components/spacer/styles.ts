@@ -8,6 +8,5 @@ border-radius: 25px;
 @media ${({ theme }) => theme.devices.tablet} {
   width: 15vw;
   align-self: normal;
-  margin-left: 13vw;
-}
+ }
 `;

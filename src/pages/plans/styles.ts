@@ -7,7 +7,7 @@ export const Span = styled.span`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: ${({ theme }) => theme.fontSize.xxlg};
   @media ${({ theme }) => theme.devices.tablet} {
-    font-size: 35px;
+    font-size: ${({ theme }) => theme.fontSize.lg};
   }
 `;
 
@@ -18,14 +18,17 @@ export const SpanAux = styled.span`
   font-family: ${({ theme }) => theme.fonts.secundary};
   font-size: ${({ theme }) => theme.fontSize.md};
   @media ${({ theme }) => theme.devices.tablet} {
-    font-size: 35px;
+    font-size: ${({ theme }) => theme.fontSize.md};
+    display: flex;
+    text-align: center;
+    width: 95%;
   }
 `;
 
 export const MainSpanContainer = styled.div`
   display: flex;
   align-items: center;
-   flex-direction: column;
+  flex-direction: column;
   @media ${({ theme }) => theme.devices.tablet} {
   }
 `;
@@ -33,38 +36,46 @@ export const PlansContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex: 3;
+  width: 100%
   @media ${({ theme }) => theme.devices.tablet} {
     flex-direction: column;
-    flex: 3;  
+    flex: 3;
   }
 `;
+
+export const PlanCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
+
 export const SwitchContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-   @media ${({ theme }) => theme.devices.tablet} {
-    }
+  @media ${({ theme }) => theme.devices.tablet} {
+  }
 `;
 
 export const SpacerContainer = styled.div`
   display: flex;
   flex-direction: row;
-   padding-bottom: 2vh;
-   place-self: self-end;
-    padding-right: 5vw;
-    @media ${({ theme }) => theme.devices.laptopL} {
-      padding-right: 10vw;
-    }
+  padding-bottom: 2vh;
+  place-self: self-end;
+  padding-right: 5vw;
+  @media ${({ theme }) => theme.devices.laptopL} {
+    padding-right: 10vw;
+  }
 `;
 export const OffCointainer = styled.div`
   display: flex;
-   flex-direction: column;
+  flex-direction: column;
   @media ${({ theme }) => theme.devices.tablet} {
   }
 `;
 export const OffSpan = styled.div`
-background-color: ${({ theme }) => theme.colors.white.normal};
-font-family: ${({ theme }) => theme.fonts.primary};
+  background-color: ${({ theme }) => theme.colors.white.normal};
+  font-family: ${({ theme }) => theme.fonts.primary};
   color: ${({ theme }) => theme.colors.red.normal};
   font-size: ${({ theme }) => theme.fontSize.md2};
   justify-content: center;
@@ -79,13 +90,23 @@ font-family: ${({ theme }) => theme.fonts.primary};
   display: flex;
   width: 4.5vw;
   height: 1vh;
+  opacity: 1;
   @media ${({ theme }) => theme.devices.laptopL} {
+    padding-bottom: 0vh;
     width: 6vw;
+    height: 4vh;
+    padding-top: 0.5vh;
+  }
+  @media ${({ theme }) => theme.devices.tablet} {
+    padding-bottom: 0vh;
+    width: 20vw;
+    height: 4vh;
+    padding-top: 0.5vh;
   }
 `;
 export const SwitchIcon = styled.img`
-width: 30px;
- @media ${({ theme }) => theme.devices.tablet} {
+  width: 30px;
+  @media ${({ theme }) => theme.devices.tablet} {
   }
 `;
 
@@ -104,17 +125,17 @@ export const SwitchUnder = styled.div`
 `;
 export const SwitchUnderLeft = styled.div`
   display: flex;
-    padding-bottom: 2vh;
-     padding-right: 5vw;
-    @media ${({ theme }) => theme.devices.laptopL} {
-      padding-right: 10vw;
-    }
+  padding-bottom: 2vh;
+  padding-right: 5vw;
+  @media ${({ theme }) => theme.devices.laptopL} {
+    padding-right: 10vw;
+  }
 `;
 export const SwitchUnderRight = styled.div`
   display: flex;
-    padding-bottom: 2vh;
-    padding-left: 9.3vw;
-     @media ${({ theme }) => theme.devices.laptopL} {
-      padding-right: 10vw;
-    }
+  padding-bottom: 2vh;
+  padding-left: 9.3vw;
+  @media ${({ theme }) => theme.devices.laptopL} {
+    margin-left: auto;
+  }
 `;

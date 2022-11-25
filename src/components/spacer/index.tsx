@@ -5,6 +5,7 @@ interface Props {
   color: string;
   customWidth?: string;
   customHeight?: string;
+  disable?: boolean;
 }
 const Spacer: React.FC<Props> = ({ color, customWidth, customHeight }) => {
   return (
